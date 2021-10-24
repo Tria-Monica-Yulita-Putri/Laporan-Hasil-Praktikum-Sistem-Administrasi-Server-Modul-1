@@ -6,9 +6,9 @@
    sudo lxc-copy -R ubuntu_php5.6 name -N ubuntu_landing
    ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\1.jpeg)
+![1](https://user-images.githubusercontent.com/92940432/138595377-26a324e9-ae4a-49c8-b506-fef11b2145b0.jpeg)
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\2.jpeg)
+![2](https://user-images.githubusercontent.com/92940432/138595384-e3788638-67fc-454e-8368-175065bbdb88.jpeg)
 
 
 
@@ -22,7 +22,7 @@
   sudo lxc-attach -n ubuntu_landing
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\3.jpeg)
+![3](https://user-images.githubusercontent.com/92940432/138595451-06d34fd4-f5db-4e3c-ba09-3f8f6b3329d7.jpeg)
 
   
 
@@ -32,8 +32,7 @@
   nano /etc/network/interfaces 
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\4.jpeg)
-
+![4](https://user-images.githubusercontent.com/92940432/138595455-45990994-fbbf-441e-876a-27b2a6ef908b.jpeg)
 
 
 * Setelah mengganti ip di ubuntu_landing, maka disini terlihat bahwa Reboot dan ip telah terganti
@@ -42,7 +41,7 @@
   reboot
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\5.jpeg)
+![5](https://user-images.githubusercontent.com/92940432/138595478-df70535d-80a1-4bb9-867e-eba9a8c448ef.jpeg)
 
 * Setelah reboot dan ip berganti dan ubuntu_landing berhasil. Maka, selanjutnya ping google untuk melihat apakah koneksi ntara komputer client dengan suatu komputer server yang terhubung dalam jaringan.
 
@@ -50,7 +49,7 @@
   ping google.com
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\6.jpeg)
+![6](https://user-images.githubusercontent.com/92940432/138595482-a01ccb53-9298-4ddb-81f8-0b2ce24d1da2.jpeg)
 
 
 
@@ -60,7 +59,7 @@
    sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
    ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\7.jpeg)
+![7](https://user-images.githubusercontent.com/92940432/138595543-4db31c8c-148c-4376-8885-1f2ff559fe73.jpeg)
 
 
 
@@ -70,7 +69,7 @@
   sudo lxc-ls -f (cek container)
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\8.jpeg)
+![8](https://user-images.githubusercontent.com/92940432/138595545-5d1656f0-f71d-4e61-9d2f-3e45596d6eb4.jpeg)
 
 
 
@@ -84,7 +83,7 @@
   sudo lxc-attach -n debian_php5.6
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\9.jpeg)
+![9](https://user-images.githubusercontent.com/92940432/138595550-b2f35134-be4e-4785-8caa-60e20c2f91b6.jpeg)
 
 
 
@@ -94,8 +93,7 @@
    apt install nano net-tools curl -y
    ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\10.jpeg)
-
+![10](https://user-images.githubusercontent.com/92940432/138595557-668a1bcb-24f0-40b6-96a4-90bf24eddd49.jpeg)
 
 
 * Setelah install net-tools pada debian_php5.6 berhasil. Selanjutnya yaitu setting ip pada debian_php5.6
@@ -104,7 +102,7 @@
   nano /etc/network/interfaces
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\11.jpeg)
+![11](https://user-images.githubusercontent.com/92940432/138595601-1717c5b6-b79e-4b37-b3c9-778740e256a4.jpeg)
 
 
 
@@ -114,7 +112,7 @@
   ifconfig
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\12.jpeg)
+![12](https://user-images.githubusercontent.com/92940432/138595606-020b4fb8-0842-4a21-9f83-461d7bd9139d.jpeg)
 
 
 
@@ -124,7 +122,7 @@
   apt install nginx nginx-extras -y
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\13.jpeg)
+![13](https://user-images.githubusercontent.com/92940432/138595615-590c72a9-6295-4c6f-94db-bdd8900d6c59.jpeg)
 
 
 
@@ -136,9 +134,8 @@
   nano lxc_php5.6.dev
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\WhatsApp Image 2021-10-24 at 19.04.07.jpeg)
+  ![33](https://user-images.githubusercontent.com/92940432/138595733-86ed253b-157a-4cf2-b0da-4746c59a3584.jpeg)
 
-  
   
   ```markdown
   cd ../sites-enabled
@@ -147,10 +144,9 @@
   nginx -s reload
   ```
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\14.jpeg)
+![14](https://user-images.githubusercontent.com/92940432/138595621-24f01c8b-4252-4ef5-aa5a-73bcb64d02a3.jpeg)
 
-![](C:\Users\TRIA YULITA\Downloads\SAS\15.jpeg)
-
+![15](https://user-images.githubusercontent.com/92940432/138595626-10fb7b24-1760-40bf-8216-98b3bb193a5a.jpeg)
 
 
 * Selanjutnya yaitu setting hosts 
@@ -159,7 +155,7 @@
   nano /etc/hosts
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\16.jpeg)
+ ![16](https://user-images.githubusercontent.com/92940432/138595783-b7a9d69d-c6a9-46a7-91be-e297f1628d2f.jpeg)
 
 
 
@@ -173,7 +169,7 @@
   cd lxc_php5.6/
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\17.jpeg)
+  ![17](https://user-images.githubusercontent.com/92940432/138595790-85d9af5a-e4d4-4177-a733-e794b5883fcb.jpeg)
 
   
 
@@ -183,7 +179,7 @@
   nano index.html
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\18.jpeg)
+  ![18](https://user-images.githubusercontent.com/92940432/138595795-24223b6c-b74f-4c74-b61c-bb4442987798.jpeg)
 
   
 
@@ -193,7 +189,7 @@
   curl -i http://lxc_php5.dev 
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\19.jpeg)
+  ![19](https://user-images.githubusercontent.com/92940432/138595803-8b5b0868-b5f8-4798-a4a7-1a147e23fc0f.jpeg)
 
   
 
@@ -204,7 +200,7 @@
    cd /etc/nginx/sites-available/
    ```
 
-   ![](C:\Users\TRIA YULITA\Downloads\SAS\20.jpeg)
+   ![20](https://user-images.githubusercontent.com/92940432/138595808-b6be5f94-967f-4d5e-8f46-2ec87e1d3416.jpeg)
 
 
 
@@ -214,8 +210,7 @@
   nano lxc_php5.6.dev
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\21.jpeg)
-
+  ![21](https://user-images.githubusercontent.com/92940432/138595878-ea343706-083c-4ad1-b28b-803ea6140693.jpeg)
 
 
 * Setelah setting lxc_landing berhasil, maka selanjutnya yaitu setting hosts landing
@@ -228,7 +223,7 @@
   nginx -s reload
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\22.jpeg)
+  ![22](https://user-images.githubusercontent.com/92940432/138595885-c6e61b96-7b06-4f9d-8772-2a5f3277df80.jpeg)
 
 
 
@@ -238,7 +233,7 @@
   nano /etc/hosts
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\23.jpeg)
+  ![23](https://user-images.githubusercontent.com/92940432/138595889-d037d6e6-be22-4c70-afc2-36d81be4fc13.jpeg)
 
   
 
@@ -248,7 +243,7 @@
   cd /var/www/html/
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\24.jpeg)
+  ![24](https://user-images.githubusercontent.com/92940432/138595882-35dce101-4b89-4b3a-a16a-fd66b4bd9d22.jpeg)
 
 
 
@@ -258,7 +253,7 @@
   nano index.html
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\25.jpeg)
+  ![25](https://user-images.githubusercontent.com/92940432/138595899-ae11bb90-080b-4f01-9126-33720118f897.jpeg)
 
 
 
@@ -268,7 +263,7 @@
   curl -i http://lxc_landing.dev 
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\26.jpeg)
+  ![26](https://user-images.githubusercontent.com/92940432/138595971-8840f06f-7f76-470f-88a5-686c88930755.jpeg)
 
 
 
@@ -281,7 +276,7 @@
    
    ```
 
-   ![](C:\Users\TRIA YULITA\Downloads\SAS\29.jpeg)
+   ![29](https://user-images.githubusercontent.com/92940432/138595980-433b240d-5e41-4d87-9850-337b382f069e.jpeg)
 
    
 
@@ -291,7 +286,7 @@
    sudo nano /etc/hosts
    ```
 
-   ![](C:\Users\TRIA YULITA\Downloads\SAS\28.jpeg)
+   ![28](https://user-images.githubusercontent.com/92940432/138595977-ce747c0b-b1df-461f-b82f-26489a8eafc7.jpeg)
 
 
 
@@ -303,7 +298,7 @@
   lxc-ls -f
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\27.jpeg)
+  ![27](https://user-images.githubusercontent.com/92940432/138595973-22b5f9b6-c637-4117-b9c8-c6a89316eaf5.jpeg)
 
 
 
@@ -313,7 +308,7 @@
   cd /etc/nginx/sites-available/
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\30.jpeg)
+  ![30](https://user-images.githubusercontent.com/92940432/138595984-fb2e90ff-87e1-4c86-82db-8a317c84fed4.jpeg)
 
 
 
@@ -323,7 +318,7 @@
   sudo nano vm.local
   ```
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\31.jpeg)
+  ![31](https://user-images.githubusercontent.com/92940432/138596044-551461b0-c5bc-4be4-b664-84b3ea48c43c.jpeg)
 
 
 
@@ -337,7 +332,7 @@
   curl -I http://vm.local
   ````
 
-  ![](C:\Users\TRIA YULITA\Downloads\SAS\32.jpeg)
+  ![32](https://user-images.githubusercontent.com/92940432/138596046-7f7d9817-e667-4413-a2d5-b90e963ababa.jpeg)
 
   
 
@@ -345,15 +340,15 @@
 
 *  [http://vm.local](http://vm.local/) akan diarahkan ke http://lxc_landing.dev
 
-  ![](C:\Users\TRIA YULITA\Downloads\WhatsApp Image 2021-10-24 at 19.12.13.jpeg)
+  ![34](https://user-images.githubusercontent.com/92940432/138596122-944f83db-f39d-4f45-8c3f-cec24f58e68e.jpeg)
 
 *  http://vm.local/blog akan diarahkan ke http://lxc_php7.dev
 
-  ![](C:\Users\TRIA YULITA\Downloads\WhatsApp Image 2021-10-24 at 19.11.16.jpeg)
+  ![35](https://user-images.githubusercontent.com/92940432/138596128-5ccba9a3-68cc-4f93-be23-9f82041af44c.jpeg)
 
 * http://vm.local/app akan diarahkan ke http://lxc_php5.dev
 
-  ![](C:\Users\TRIA YULITA\Downloads\WhatsApp Image 2021-10-24 at 19.11.16 (1).jpeg)
+  ![36](https://user-images.githubusercontent.com/92940432/138596132-c7257d48-c4ae-41d5-ac86-97df6098bfb3.jpeg)
 
   
 
