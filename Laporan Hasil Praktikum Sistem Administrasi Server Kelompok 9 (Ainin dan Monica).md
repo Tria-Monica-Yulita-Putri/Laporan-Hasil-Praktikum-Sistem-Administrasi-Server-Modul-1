@@ -372,7 +372,7 @@
      Jawab : 
 
       - Proxy server adalah sebuah program komputer yang dapat bekerja sebagai perantara jaringan. Proxy server biasanya digunakan untuk meningkatkan proteksi atau mengontrol dan memonitor seluruh aktivitas jaringan dalam mengakses internet.
-     - Karena dalam pemanfaatan VM local, inerja server tidak jauh beda dengan server fisik. VM local dapat membuat server lebih dari satu hanya dengan menggunakan satu VM local. Dan dalam pembuatan virtual server, juga menerapkan teknologi proxy server dimana proxy server berguna untuk mengontrol dan memblokir sebuah aktivitas jaringan jikalau ada situs-situs terlarang. 
+     - Karena dalam pemanfaatan VM local, kinerja server tidak jauh beda dengan server fisik. VM local dapat membuat server lebih dari satu hanya dengan menggunakan satu VM local. Dan dalam pembuatan virtual server, juga menerapkan teknologi proxy server dimana proxy server berguna untuk mengontrol dan memblokir sebuah aktivitas jaringan jikalau ada situs-situs terlarang. 
 
      
 
